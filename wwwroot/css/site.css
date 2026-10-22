@@ -1,0 +1,157 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  color: #1f2d3d;
+}
+
+body.tema-vivo {
+  background: linear-gradient(145deg, #eff6ff 0%, #dbeafe 55%, #e0f2fe 100%);
+}
+
+body.tema-vivo .navbar {
+  background: linear-gradient(90deg, #2563eb 0%, #0ea5e9 100%) !important;
+}
+
+body.tema-vivo .navbar .navbar-brand,
+body.tema-vivo .navbar .nav-link,
+body.tema-vivo .navbar .dropdown-toggle {
+  color: #ffffff !important;
+}
+
+body.tema-vivo .navbar .dropdown-menu .dropdown-item {
+  color: #1f2d3d !important;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+.navbar {
+  background-color: #ffffff !important;
+}
+
+
+.btn {
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.12);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 8px rgba(15, 23, 42, 0.12);
+}
+
+
+.btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.btn-success {
+  background-color: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  background-color: #15803d;
+  border-color: #15803d;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: #64748b;
+  border-color: #64748b;
+  color: #ffffff;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #475569;
+  border-color: #475569;
+  color: #ffffff;
+}
+
+
+.btn {
+  min-width: 110px;
+  box-shadow: none;
+  transform: none;
+}
+
+.btn:hover,
+.btn:active {
+  transform: none;
+  box-shadow: none;
+}
+
+.page-actions,
+.table-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.table-actions .btn {
+  min-width: auto;
+}
+
+.form-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+  align-items: center;
+}
