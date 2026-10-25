@@ -18,7 +18,9 @@ Como executar (SSMS):
 - File -> Open -> File... -> escolher o script
 - Confirmar que esta a apontar para a base `GestaoFrota`
 - Execute (F5)
- ------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+
 Trigger — trg_DeleteVeiculo
 O que faz: quando apagas um veículo da tabela Veiculos, o SQL Server corre sozinho e grava um registo na tabela LogVeiculos com:
 
