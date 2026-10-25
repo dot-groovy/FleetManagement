@@ -4,5 +4,7 @@ ASP.NET Core MVC app to manage drivers, vehicles, and maintenance records. Role-
 <img src="./prints/print2.jpg" alt="Captura de ecrã do projeto" width="500">
 <img src="./prints/print3.jpg" alt="Captura de ecrã do projeto" width="500">
 <img src="./prints/print4.jpg" alt="Captura de ecrã do projeto" width="500">
-<img src="./prints/video1.mp4" alt="Captura de ecrã do projeto" width="500">
+<video src="./prints/video1.mp4" controls width="500">
+  O teu navegador não suporta a reprodução deste vídeo.
+</video>
 
