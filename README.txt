@@ -1,1 +1,3 @@
-![Captura de ecrã do projeto](prints/print1.jpg)
+## Captura de ecrã
+
+![Captura de ecrã do projeto](./prints/print1.jpg)
