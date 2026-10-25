@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestaoFrota")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0704f48b15b6fda99c67ffe24f82bd2a949f2bbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b142c93458cb03232beb05f80a02a4342ce41ff3")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestaoFrota")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestaoFrota")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
