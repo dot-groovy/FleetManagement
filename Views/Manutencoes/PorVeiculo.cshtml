@@ -1,0 +1,53 @@
+@model IEnumerable<GestaoFrota.Models.Manutencao>
+
+@{
+    ViewData["Title"] = "Manutenções por Veículo";
+    var veiculo = ViewData["Veiculo"] as GestaoFrota.Models.Veiculo;
+}
+
+<h1>Manutenções do Veículo</h1>
+@if (veiculo != null)
+{
+    <p class="text-muted">Veículo: @veiculo.Matricula - @veiculo.Marca @veiculo.Modelo</p>
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>Tipo</th>
+            <th>Custo</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Data.ToString("dd/MM/yyyy")</td>
+                <td>@item.Tipo</td>
+                <td>@item.Custo.ToString("C2")</td>
+                <td>
+                    <div class="table-actions">
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Detalhes</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-secondary">Editar</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (!Model.Any())
+{
+    <p class="text-muted">Nenhuma manutenção registada para este veículo.</p>
+}
+
+<div class="page-actions">
+    @if (veiculo != null)
+    {
+        <a asp-controller="Veiculos" asp-action="Details" asp-route-id="@veiculo.Id" class="btn btn-secondary">Voltar ao Veículo</a>
+    }
+    <a asp-action="Index" class="btn btn-secondary">Voltar a Lista de Manutenções</a>
+</div>
